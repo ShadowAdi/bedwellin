@@ -11,10 +11,10 @@ const ExploreDestination = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Tailwind md
+      setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // initial check
+    handleResize(); 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -55,9 +55,7 @@ const ExploreDestination = () => {
             onLeave={() => !isMobile && setHoveredIndex(null)}
             isMobile={isMobile}
             isClicked={isMobile && clickedIndex === i}
-            onClickMobile={() =>
-              setClickedIndex(clickedIndex === i ? null : i)
-            }
+            onClickMobile={() => setClickedIndex(clickedIndex === i ? null : i)}
           />
         ))}
       </div>
