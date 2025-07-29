@@ -22,7 +22,7 @@ const GetStarted = () => {
       <div className="flex flex-col items-center justify-center space-y-3">
         <Badge text="For Hosts" bgColor="#9333ea" />
         <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold font-sans text-center">
-          It's easy to get started on Bedwellin
+          It&apos;s easy to get started on Bedwellin
         </h1>
         <p className="text-base md:text-lg lg:text-xl xl:text-3xl text-gray-600 font-sans text-center">
           Join millions of hosts on Bedwellin to share your space and earn extra
