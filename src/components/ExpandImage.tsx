@@ -34,9 +34,9 @@ const ExpandImage = ({
     if (isMobile) return "auto";
 
     if (hoveredIndex === null) return `${100 / totalImages}%`;
-    if (isHovered) return "50%";
+    if (isHovered) return "40%";
 
-    const remainingSpace = 59;
+    const remainingSpace = 60;
     const otherImagesCount = totalImages - 1;
     return `${remainingSpace / otherImagesCount}%`;
   };
@@ -58,7 +58,7 @@ const ExpandImage = ({
       }}
     >
       <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-300"
+        className="absolute inset-0 bg-center transition-all duration-300"
         style={{
           backgroundImage: `url(${imgUrl})`,
           filter:
@@ -68,6 +68,9 @@ const ExpandImage = ({
               ? "brightness(0.8)"
               : "brightness(0.4)",
           zIndex: 0,
+          backgroundSize: hoveredIndex===null?"fill":isHovered?"fill":"fill", 
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       />
 
