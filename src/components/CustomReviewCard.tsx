@@ -18,7 +18,7 @@ const CustomReviewCard = ({
   profileTextColor: string;
 }) => {
   return (
-    <Card className="px-4 flex flex-col gap-3 max-w-[320px] lg:max-w-[360px]">
+    <Card className="px-4 flex flex-col gap-3 max-w-[260px] lg:max-w-[320px]">
       <CardHeader className="p-0 mb-0 flex items-center justify-start">
         <Star className="h-6 w-6 text border-transparent outline-transparent fill-[#fbbf24] text-transparent" />
         <Star className="h-6 w-6 text border-transparent outline-transparent fill-[#fbbf24] text-transparent" />

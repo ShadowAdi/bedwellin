@@ -20,7 +20,7 @@ const ExploreDestination = () => {
   }, []);
 
   return (
-    <section className="w-full max-w-[1440px] h-screen flex flex-col py-20 lg:items-center flex-1 space-y-10">
+    <section className="w-full max-w-[1440px] h-screen flex flex-col py-20 lg:items-center flex-1 space-y-10 pb-0">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
