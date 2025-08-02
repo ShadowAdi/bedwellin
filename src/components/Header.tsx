@@ -24,7 +24,7 @@ const Header = () => {
       </nav>
 
       <button className="bg-[#a855f7] text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-[#9333ea] transition-colors cursor-pointer xl:text-xl">
-        Book Now
+        Sign In
       </button>
     </header>
   );
